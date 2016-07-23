@@ -18,4 +18,6 @@ GTK Theme: Ambiance Blackout FLAT (http://www.ravefinity.com/p/download-ambiance
 
 Icon Theme: Vivavious Colors [w/ folder colors addon] (http://www.ravefinity.com/p/vivacious-colors-gtk-icon-theme.html)
 
+Font: Powerline Patched Meslo (https://github.com/powerline/fonts)
+
 
