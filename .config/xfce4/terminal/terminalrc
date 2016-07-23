@@ -17,11 +17,13 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-FontName=Monospace 10
+FontName=Meslo LG S DZ for Powerline 10
 ColorBackground=#333333333333
-ColorPalette=#333333333333;#dfdf38382c2c;#4e4e9a9a0606;#adad78782929;#61617a7ad6d6;#9c288d2b76ae;#cccc53530606;#e0e0e0e0e0e0;#4a4a4a4a4a4a;#f85156264a7f;#6464b3b31919;#fafaadad3d3d;#8a8aadadd4d4;#b5b5abab9c9c;#e6666be71df4;#ebebebebebeb
+ColorPalette=#333333333333;#cece3a3a3a3a;#e6e66c6c1e1e;#989855552f2f;#54546b6bcfcf;#7e7e5b5bc5c5;#1c1cb3b39f9f;#e0e0e0e0e0e0;#63d763d763d7;#e8e858585858;#ffff87873b3b;#b3b36f6f4949;#76768c8ce8e8;#9c9c7c7cdede;#3535ccccb8b8;#ebebebebebeb
 ColorForeground=#e0e0e0e0e0e0
 ColorCursor=#e6e66c6c1e1e
 ColorSelection=#dfdf38382c2c
 TabActivityColor=#e6e66c6c1e1e
+ColorBold=#e6e66c6c1e1e
+ColorBoldUseDefault=FALSE
 
