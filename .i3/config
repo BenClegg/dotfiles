@@ -171,12 +171,40 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+set $bg			#333333
+set $bar_bg		#2B2B2B
+set $text		#E66C1E
+set $text_light		#FF873B
+set $focus		#E66C1E
+set $active		#636363
+set $inactive		#2B2B2B
+set $urgent		#CE3A3A
+set $urgent_light	#E85858
+
+hide_edge_borders	none
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	colors {
+        	#color class       border  	back.  		text
+	        focused_workspace  $focus	$focus		$bar_bg
+        	active_workspace   $active	$active		#ffffff
+	        inactive_workspace $inactive	$inactive	$text
+        	urgent_workspace   $urgent	$urgent		$bar_bg
+		
+		background 	$bar_bg_colour
+		statusline 	$text_colour
+    	}
         status_command i3blocks -c ~/.i3/i3blocks.conf
         tray_output primary
 }
+
+#colors:                border  backgr. text    indicator
+client.focused          #E66C1E #E66C1E #ffffff #2b2b2b
+client.focused_inactive #636363 #636363 #ffffff #2b2b2b
+client.unfocused        #4A4A4A #4A4A4A #ffffff #2b2b2b
+client.urgent           #CE3A3A #CE3A3A #ffffff #2b2b2b
 
 #Workspace setup, have 3 workspaces on vertical monitor, and the rest on main.
 workspace 1 output DVI-D-0
