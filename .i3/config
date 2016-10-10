@@ -15,7 +15,7 @@
 #set $mod Mod1
 set $mod Mod4
 
-exec~/.i3/swapkeys.sh
+#exec~/.i3/swapkeys.sh
 new_window pixel 4
 
 exec --no-startup-id nitrogen --restore
@@ -250,11 +250,16 @@ bindsym $mod+plus exec --no-startup-id pactl set-sink-volume 1 +5% #increase sou
 bindsym $mod+minus exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
 bindsym $mod+BackSpace exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
 
+#bindsym $mod+plus exec amixer -q set Master 2dB+ unmute #increase sound volume
+#bindsym $mod+minus exec amixer -q set Master 2dB- unmute  #decrease sound volume
+#bindsym $mod+BackSpace exec -q set Master toggle  # mute sound
+
+
 #LAPTOP CONTROLS:
 #Volume keys:
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-bindsym XF86AudioMute exec -q set Master toggle
+#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+#bindsym XF86AudioMute exec -q set Master toggle
 #Brightness:
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
