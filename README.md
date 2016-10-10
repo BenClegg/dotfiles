@@ -12,6 +12,8 @@ Statusbar: i3-blocks
 
 Terminal Emulator: xfce4-terminal
 
+File Manager: pcmanfm
+
 Shell: zsh [extended with oh-my-zsh]
 
 GTK Theme: Ambiance Blackout FLAT (http://www.ravefinity.com/p/download-ambiance-blackout-flat-colors.html)
