@@ -10,8 +10,8 @@
 exec ~/.i3/multimon.sh
 #Set mod key as Alt, but Windows is Alt in xmodmap, for modified keyboard layout.
 #Mod1 = Alt, Mod4 = Win
-set $mod Mod1
-exec~/.i3/swapkeys.sh
+set $mod Mod4
+#exec~/.i3/swapkeys.sh
 new_window pixel 3
 
 exec --no-startup-id nitrogen --restore
@@ -228,8 +228,11 @@ bindsym XF86AudioPrev exec playerctl previous
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
 #bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
-bindsym $mod+plus exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
-bindsym $mod+x exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
-bindsym $mod+minus exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
-bindsym $mod+z exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
-bindsym $mod+BackSpace exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+bindsym $mod+plus exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym $mod+x exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym $mod+minus exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym $mod+z exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym $mod+BackSpace exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+#Brightness
++bindsym XF86MonBrightnessUp exec xbacklight -inc 10
++bindsym XF86MonBrightnessDown exec xbacklight -dec 10
