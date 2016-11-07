@@ -21,12 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export ANT_HOME="/home/midcode/Software/apache-ant-1.9.7"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-
-#Add JOGL to path + classpath
-export PATH="$PATH:$HOME/lib/jogamp-all-platforms"
-export CLASSPATH="$CLASSPATH:$HOME/lib/jogamp-all-platforms/jar/jogl-all.jar:$HOME/lib/jogamp-all-platforms/jar/gluegen-rt.jar"
+export PATH=~/.npm-global/bin:$PATH
+export PATH=~/Software/activator-dist-1.3.12/bin:$PATH
+export CLASSPATH=$CLASSPATH:~/Software/junit-4.10.jar
