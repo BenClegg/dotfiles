@@ -2,11 +2,15 @@
 Personal dotfiles for desktop configuration.
 
 
-OS: Lubuntu 16.04
+OS: Arch
+
+Display Manager: LightDM
 
 Window Manager: i3-wm
 
 Statusbar: i3-blocks
+
+Greeter: LightDM GTK Greeter
 
 
 
@@ -23,3 +27,4 @@ Icon Theme: Vivavious Colors [w/ folder colors addon] (http://www.ravefinity.com
 Font: Powerline Patched Meslo (https://github.com/powerline/fonts)
 
 
+Lock script from (https://github.com/savoca/dotfiles/tree/gray/home/.bin/scripts)
