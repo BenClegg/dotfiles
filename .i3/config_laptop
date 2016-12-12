@@ -197,9 +197,9 @@ bindsym $mod+r mode "resize"
 
 set $bg			#333333
 set $bar_bg		#2B2B2B
-set $text		#9C7CDE
-set $text_light		#9C7CDE
-set $focus		#7E5BC5
+set $text		#E231A3
+set $text_light		#FC4BBD
+set $focus		#E231A3
 set $active		#636363
 set $inactive		#2B2B2B
 set $urgent		#CE3A3A
@@ -218,14 +218,14 @@ bar {
         	urgent_workspace   $urgent	$urgent		$bar_bg
 		
 		background 	$bar_bg_colour
-		statusline 	$text_colour
+		statusline 	#FC4BBD
     	}
         status_command i3blocks -c ~/.i3/i3blocks.conf
         tray_output primary
 }
 
 #colors:                border  backgr. text    indicator
-client.focused          #7E5BC5 #7E5BC5 #ffffff #2b2b2b
+client.focused          #E231A3 #E231A3 #ffffff #2b2b2b
 client.focused_inactive #636363 #636363 #ffffff #2b2b2b
 client.unfocused        #4A4A4A #4A4A4A #ffffff #2b2b2b
 client.urgent           #CE3A3A #CE3A3A #ffffff #2b2b2b
