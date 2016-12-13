@@ -267,3 +267,6 @@ bindsym $mod+BackSpace exec --no-startup-id pactl set-sink-mute 0 toggle # mute 
 #Brightness
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
+
+#Screenshot
+bindsym $mod+Print exec scrot
