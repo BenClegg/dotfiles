@@ -8,21 +8,24 @@
 # layout, use the i3-config-wizard
 #
 
-#i3-gaps settings
-gaps inner 8
-gaps outer 2
-smart_gaps on
-smart_borders on
-new_window pixel 2
-
-
 #exec ~/.i3/multimon.sh
 #Set mod key as Alt, but Windows is Alt in xmodmap, for modified keyboard layout.
 #Mod1 = Alt, Mod4 = Win
 set $mod Mod4
 #exec~/.i3/swapkeys.sh
 
+#Set wallpaper
 exec --no-startup-id nitrogen --restore
+
+#i3-gaps settings
+gaps inner 8
+smart_gaps on
+smart_borders on
+new_window pixel 2
+#Gap changing on the fly
+bindsym $mod+bracketleft gaps inner all set 0
+bindsym $mod+bracketright gaps inner all set 8
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
