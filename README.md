@@ -6,7 +6,7 @@ OS: Arch
 
 Display Manager: LightDM
 
-Window Manager: i3-wm (with i3-blocks, i3-lock, j4-dmenu-desktop)
+Window Manager: i3-gaps (with i3-blocks, i3-lock, j4-dmenu-desktop)
 
 Greeter: LightDM GTK Greeter
 
