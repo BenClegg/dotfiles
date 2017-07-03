@@ -12,9 +12,9 @@ Greeter: LightDM GTK Greeter
 
 
 
-Terminal Emulator: xfce4-terminal
+Terminal Emulator: gnome-terminal
 
-File Manager: pcmanfm
+File Manager: GNOME Files / Nautilus
 
 Shell: zsh [extended with oh-my-zsh], using modified "Bureau" theme. 
 
