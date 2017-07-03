@@ -7,7 +7,7 @@
 # To get a config file with the same key positions, but for your current
 # layout, use the i3-config-wizard
 #
-
+exec "set xkbmap -layout gb"
 #exec ~/.i3/multimon.sh
 #Set mod key as Alt, but Windows is Alt in xmodmap, for modified keyboard layout.
 #Mod1 = Alt, Mod4 = Win
@@ -15,7 +15,7 @@ set $mod Mod4
 #exec~/.i3/swapkeys.sh
 
 #Set wallpaper
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 
 #i3-gaps settings
 gaps inner 8
@@ -55,7 +55,7 @@ set $right l
 floating_modifier $mod
 
 #: start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # file manager
 bindsym $mod+Shift+f exec pcmanfm
