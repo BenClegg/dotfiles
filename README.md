@@ -18,7 +18,7 @@ File Manager: pcmanfm
 
 Shell: zsh [extended with oh-my-zsh], using modified "Bureau" theme. 
 
-GTK Theme: Ambiance Blackout FLAT (Purple) (http://www.ravefinity.com/p/download-ambiance-blackout-flat-colors.html)
+GTK Theme: Centauri (https://github.com/vval/centaurigtktheme)
 
 Icon Theme: Vivavious Colors (Purple) [w/ folder colors addon] (http://www.ravefinity.com/p/vivacious-colors-gtk-icon-theme.html)
 
