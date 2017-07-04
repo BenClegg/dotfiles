@@ -214,9 +214,9 @@ bindsym $mod+r mode "resize"
 
 set $bg			#333333
 set $bar_bg		#2B2B2B
-set $text		#E231A3
+set $text		#F0544C
 set $text_light		#FC4BBD
-set $focus		#E231A3
+set $focus		#F0544C
 set $active		#636363
 set $inactive		#2B2B2B
 set $urgent		#CE3A3A
@@ -241,11 +241,11 @@ bar {
         tray_output primary
 }
 
-#colors:                border  backgr. text    indicator
-client.focused          #215D9C #215D9C #ffffff #2b2b2b
-client.focused_inactive #636363 #636363 #ffffff #2b2b2b
-client.unfocused        #4A4A4A #4A4A4A #ffffff #2b2b2b
-client.urgent           #CE3A3A #CE3A3A #ffffff #2b2b2b
+#colors:                border		backgr.		text    indicator
+client.focused          $focus		$focus		#ffffff #2b2b2b
+client.focused_inactive $active		$active		#ffffff #2b2b2b
+client.unfocused        $inactive	$inactive	#ffffff #2b2b2b
+client.urgent           #CE3A3A 	#CE3A3A		#ffffff #2b2b2b
 
 #Workspace setup, have 3 workspaces on vertical monitor, and the rest on main.
 workspace 1 output DVI-D-0
