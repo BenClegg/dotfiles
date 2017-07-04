@@ -9,7 +9,7 @@
 #
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id nm-applet #networkmanager
-exec "setxkbmap -layout gb"
+exec --no-startup-id "setxkbmap -layout gb"
 #exec ~/.i3/multimon.sh
 #Set mod key as Alt, but Windows is Alt in xmodmap, for modified keyboard layout.
 #Mod1 = Alt, Mod4 = Win
