@@ -235,7 +235,7 @@ bar {
         	urgent_workspace   $urgent	$urgent		$bar_bg
 		
 		background 	$bar_bg_colour
-		statusline 	#FC4BBD
+		statusline 	$text
     	}
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
         tray_output primary
