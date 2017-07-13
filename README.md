@@ -2,13 +2,9 @@
 Personal dotfiles for desktop configuration.
 
 
-OS: Arch
-
-Display Manager: LightDM
+OS: OpenSUSE
 
 Window Manager: i3-gaps (with i3-blocks, i3-lock, j4-dmenu-desktop)
-
-Greeter: LightDM GTK Greeter
 
 
 
@@ -22,7 +18,8 @@ GTK Theme: Numix ()
 
 Icon Theme: Vivavious Colors (Purple) [w/ folder colors addon] (http://www.ravefinity.com/p/vivacious-colors-gtk-icon-theme.html)
 
-Font: Powerline Patched Meslo (https://github.com/powerline/fonts)
+Font (Standard): Powerline Patched Meslo (https://github.com/powerline/fonts)
 
+Font (Mono): Roboto Mono for Powerline
 
 Lock script and icon from (https://github.com/savoca/dotfiles/tree/gray/home/.bin/scripts)
