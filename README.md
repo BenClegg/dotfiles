@@ -4,6 +4,9 @@ Personal dotfiles for desktop configuration.
 
 OS: OpenSUSE
 
+Configuration file locations may be different on some distributions.
+
+
 Window Manager: i3-gaps (with i3-blocks, i3-lock, j4-dmenu-desktop)
 
 
