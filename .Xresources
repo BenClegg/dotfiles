@@ -1,2 +1,3 @@
-Xcursor.theme: Vanilla-DMZ
-Xcursor.size: 16
+#include ".xres/colour"
+#include ".xres/urxvt"
+#include ".xres/cursor"

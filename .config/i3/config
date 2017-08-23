@@ -10,6 +10,7 @@
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id nm-applet #networkmanager
 exec --no-startup-id "setxkbmap -layout gb"
+exec --no-startup-id guake
 #exec ~/.i3/multimon.sh
 #Set mod key as Alt, but Windows is Alt in xmodmap, for modified keyboard layout.
 #Mod1 = Alt, Mod4 = Win
@@ -20,11 +21,11 @@ set $mod Mod4
 #exec --no-startup-id nitrogen --restore
 
 #i3-gaps settings
-gaps inner 8
-smart_gaps on
-smart_borders on
+for_window [class="^.*"] border pixel 2
+#gaps inner all set 8
+#smart_gaps on
+#smart_borders on
 #new_window pixel 2
-for_window [class=.*] border pixel 2
 
 #Gap changing on the fly
 bindsym $mod+bracketleft gaps inner all set 0
@@ -59,7 +60,7 @@ set $right l
 floating_modifier $mod
 
 #: start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec urxvt
 
 # file manager
 bindsym $mod+Shift+f exec nautilus
@@ -212,15 +213,17 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg			#333333
-set $bar_bg		#2B2B2B
-set $text		#F0544C
-set $text_light		#FC4BBD
-set $focus		#F0544C
-set $active		#636363
-set $inactive		#2B2B2B
-set $urgent		#CE3A3A
-set $urgent_light	#E85858
+set $mn_green   #a6e22e
+set $mn_purple  #ae81ff
+set $mn_grey    #75715e
+set $mn_pink    #f92672
+set $mn_white   #f8f8f2
+set $mn_blue    #66d9ef
+
+set $arc_0      #2e2e2e   
+set $arc_1      #383838   
+set $arc_2      #3d3d3d
+set $arc_3      #4a4a4a
 
 hide_edge_borders	none
 
@@ -228,24 +231,23 @@ hide_edge_borders	none
 # finds out, if available)
 bar {
 	colors {
-        	#color class       border  	back.  		text
-	        focused_workspace  $focus	$focus		$bar_bg
-        	active_workspace   $active	$active		#ffffff
-	        inactive_workspace $inactive	$inactive	$text
-        	urgent_workspace   $urgent	$urgent		$bar_bg
+        	#color class       border  	    back.  		text
+	        focused_workspace  $mn_blue 	$mn_blue	$arc_0
+        	active_workspace   $arc_3       $arc_3      $arc_0
+	        inactive_workspace $arc_0       $arc_0      $mn_blue
+        	urgent_workspace   $mn_pink	    $mn_pink	$arc_0
 		
-		background 	$bar_bg_colour
-		statusline 	$text
-    	}
+		background 	$arc_0
+    }
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
         tray_output primary
 }
 
 #colors:                border		backgr.		text    indicator
-client.focused          $focus		$focus		#ffffff #2b2b2b
+client.focused          $mn_blue    $mn_blue    #ffffff #2b2b2b
 client.focused_inactive $active		$active		#ffffff #2b2b2b
-client.unfocused        $inactive	$inactive	#ffffff #2b2b2b
-client.urgent           #CE3A3A 	#CE3A3A		#ffffff #2b2b2b
+client.unfocused        $arc_2      $arc_2      #ffffff #2b2b2b
+client.urgent           $mn_pink 	$mn_pink	#ffffff #2b2b2b
 
 #Workspace setup, have 3 workspaces on vertical monitor, and the rest on main.
 workspace 1 output DVI-D-0
