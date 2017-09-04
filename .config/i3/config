@@ -22,10 +22,11 @@ set $mod Mod4
 
 #i3-gaps settings
 for_window [class="^.*"] border pixel 2
-#gaps inner all set 8
-#smart_gaps on
-#smart_borders on
-#new_window pixel 2
+gaps outer 0
+gaps inner 8
+smart_gaps on
+smart_borders on
+new_window pixel 2
 
 #Gap changing on the fly
 bindsym $mod+bracketleft gaps inner all set 0
@@ -60,10 +61,10 @@ set $right l
 floating_modifier $mod
 
 #: start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec lxterminal
 
 # file manager
-bindsym $mod+Shift+f exec nautilus
+bindsym $mod+Shift+f exec pcmanfm
 
 # kill focused window
 bindsym $mod+Shift+q kill

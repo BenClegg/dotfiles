@@ -13,11 +13,3 @@ set relativenumber
 set path+=**
 set wildmenu
 
-
-" Set Molokai colours
-try 
-"    colorscheme molokai
-catch
-endtry
-
-
