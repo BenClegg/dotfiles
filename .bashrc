@@ -116,16 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# added by Anaconda 2.3.0 installer
-export PATH="/home/midcode/anaconda/bin:$PATH"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-export ANT_HOME=/home/midcode/Software/apache-ant-1.9.7
-
-
-# added by Anaconda3 4.1.1 installer
-export PATH="/home/midcode/Downloads/]/bin:$PATH"
+source ~/.profile

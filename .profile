@@ -21,6 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export PATH=~/.npm-global/bin:$PATH
-export PATH=~/Software/activator-dist-1.3.12/bin:$PATH
-export CLASSPATH=$CLASSPATH:~/Software/junit-4.10.jar
+# add user scripts
+if [ -d "$HOME/.scripts" ] ; then
+    PATH="$HOME/.scripts:$PATH"
+fi
