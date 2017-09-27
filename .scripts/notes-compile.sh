@@ -8,4 +8,4 @@ _filename=$(basename "$_inputfile")
 _filename="${_filename%.*}"
 echo "Compiling PDF for" $_filename"..."
 
-pandoc $_filename.md -f markdown -s -o $_filename-notes.pdf
+pandoc $_filename.md -f markdown -s -V papersize:a4paper -V geometry:margin=1in --latex-engine=/usr/bin/pdflatex -o $_filename-notes.pdf
