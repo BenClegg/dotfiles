@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Compile Markdown notes to PDF via Pandoc (with LaTeX)
+
 _inputfile="$1"
 
 [[ $# -ne 1 ]] && { echo "Filename required."; exit 1; }
