@@ -17,5 +17,5 @@ cat > $_filename.md <<_EOF_
 % Author One ; Author Two
 % Created: $_date | Modified: $_date
 
-# Overview
+# Abstract
 _EOF_
